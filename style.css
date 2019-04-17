@@ -1,15 +1,31 @@
-
-body,td,th {
-	font-size: 16px;
-	color: #402000;
-	font-family: "Comic Sans MS", cursive;
+* {
+  margin: 0;
+  padding: 0;
+	box-sizing: inherit; 
 }
+
+html {
+font-size: 62.5%;  /* ovo definira sto je 1rem !! */
+}
+
+
+.text-srednji {
+	font-size: 1.6rem;
+	font-weight: 400;
+
+}
+
+.text-veliki {
+	font-size: 3rem;
+}
+
 body {
-	background-image: url(slike/pozadina2_mala.jpg);
-	background-repeat: repeat;
-	font-family: "Comic Sans MS", cursive;
+	/* background-image: url(img/pocetna.jpg); */
+	/* background-repeat: repeat; */
+	font-family: "Lato", cursive;
 	text-align: center;
 }
+
 a:link {
 	text-decoration: none;
 	color: #BA250C;
@@ -19,49 +35,122 @@ a:visited {
 	color: #BA250C;
 }
 a:hover {
-	color: #0C3DBA;
+	color: rgb(111, 189, 22);
 	text-decoration: none;
 }
 a:active {
 	text-decoration: none;
 	color: #BA250C;
 }
-.veliko {
-	font-size: 24px;
-}
-.naslov {
-	font-size: 36px;
-	font-family: "Comic Sans MS", cursive;
-}
-.zeleno {
-	color: #005B00;
-}
-.plava {
-	color: #0C3DBA;
-	font-size: 14px;
-}
-zeleno14 {
-	font-size: 14px;
-}
-.zeleno14 {
-	font-size: 14px;
-	color: #005B00;
-}
-.molitva {
-	font-size: 18px;
-}
-.napomena {	font-style: italic;
-	font-size: 12px;
-}
-.tekst-13 {
-	font-size: 13px;
-}
-.tekst-12 {
-	font-size: 12px;
-}
+
+
+
 
 .aktivna {
  font-size: 26px;
 	color: blueviolet;
 
 }
+
+.row {
+  max-width: 114rem;
+	background-color: #ccc;
+	margin: 0 auto;
+}
+
+
+#navbar ul {
+	padding: 1rem;
+	list-style-type:none;
+	text-align:center;
+	background-color: #dbd0d0;
+	margin: 1rem;
+	margin-right: 1rem;
+	}
+	
+	#navbar ul li {
+	display: inline;
+	margin-right: 5rem;
+	font-size: 2rem;
+	}
+
+.row .col-1-of-2 {
+  width: 55.5rem;
+	background-color: #ccc;
+	float: left; 
+}
+
+.row .col-1-of-2:not(:last-child) {
+	margin-right: 3rem;
+}
+
+
+.row .col-1-of-3 {
+  width: 36rem;
+  float: left; 
+}
+
+.row .col-1-of-3:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.row::after {  /*	clearfix!*/
+	content: "";
+	display: table;
+	clear: both;
+	}
+	.row :not(:last-child) {
+		margin-bottom: 5rem;
+	}
+
+.mreza {
+	background-color: #0C3DBA;
+	margin-top: 10rem;
+}
+
+/*  
+
+.row {
+  max-width: $grid-width;
+ // background-color: #ccc;
+  margin: 0 auto;
+
+    &:not(:last-child){
+      margin-bottom: $gutter-vertical;
+    }
+
+    @include clearfix;
+
+ [class^="col-"] {   // ovo selektira sve  "col-"
+ // background-color: orange;
+  float: left;
+
+     &:not(:last-child){
+       margin-right: $gutter-horizontal;
+     }
+  }
+
+    .col-1-of-2 {
+      width: calc((100% - #{$gutter-horizontal}) / 2);
+    }
+
+
+
+    .col-2-of-3 {
+      width: calc( 2* (100% - 2*  #{$gutter-horizontal}) / 3 + #{$gutter-horizontal} );
+    }
+
+    .col-1-of-4 {
+      width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+    }
+
+    .col-2-of-4 {
+      width: calc( 2 * (100% - 3 * #{$gutter-horizontal}) / 4 + #{$gutter-horizontal} );
+		}
+		
+    .col-3-of-4 {
+      width: calc((100% - 3 * #{$gutter-horizontal}) * 3 / 4 + 2 * #{$gutter-horizontal});
+    }
+  
+}
+*/
