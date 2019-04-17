@@ -8,11 +8,21 @@ html {
 font-size: 62.5%;  /* ovo definira sto je 1rem !! */
 }
 
+p {
+	font-size: 1.6rem;
+}
+
+h1 {
+	font-size: 4rem;
+	padding: 1rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
 
 .text-srednji {
-	font-size: 1.6rem;
 	font-weight: 400;
-
 }
 
 .text-veliki {
@@ -43,19 +53,21 @@ a:active {
 	color: #BA250C;
 }
 
-
-
+.opis-zrna {
+	font-size: 2rem;
+	margin-top: 1rem;
+}
 
 .aktivna {
  font-size: 26px;
 	color: blueviolet;
-
 }
 
 .row {
   max-width: 114rem;
 	background-color: #ccc;
 	margin: 0 auto;
+	position: relative;
 }
 
 
@@ -108,6 +120,23 @@ a:active {
 	margin-top: 10rem;
 }
 
+
+.slika-baza
+	{
+		position:relative;
+		top: 10px;
+		left: 10px;
+		z-index: 1;
+	}
+	.slika-gore
+	{
+		position: absolute;
+		top: 5rem;
+		left: 19rem;
+		z-index: 2;
+		border-radius: 6rem;
+		transform: scale(0.8);
+	}
 /*  
 
 .row {
