@@ -1,0 +1,61 @@
+
+body,td,th {
+	font-size: 16px;
+	color: #402000;
+	font-family: "Comic Sans MS", cursive;
+}
+body {
+	background-image: url(slike/pozadina2_mala.jpg);
+	background-repeat: repeat;
+	font-family: "Comic Sans MS", cursive;
+	text-align: center;
+}
+a:link {
+	text-decoration: none;
+	color: #BA250C;
+}
+a:visited {
+	text-decoration: none;
+	color: #BA250C;
+}
+a:hover {
+	color: #0C3DBA;
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+	color: #BA250C;
+}
+.veliko {
+	font-size: 24px;
+}
+.naslov {
+	font-size: 36px;
+	font-family: "Comic Sans MS", cursive;
+}
+.zeleno {
+	color: #005B00;
+}
+.plava {
+	color: #0C3DBA;
+	font-size: 14px;
+}
+zeleno14 {
+	font-size: 14px;
+}
+.zeleno14 {
+	font-size: 14px;
+	color: #005B00;
+}
+.molitva {
+	font-size: 18px;
+}
+.napomena {	font-style: italic;
+	font-size: 12px;
+}
+.tekst-13 {
+	font-size: 13px;
+}
+.tekst-12 {
+	font-size: 12px;
+}
