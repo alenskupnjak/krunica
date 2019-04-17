@@ -4,6 +4,11 @@
 	box-sizing: inherit; 
 }
 
+
+.podjela {
+height: 90rem;
+}
+
 html {
 font-size: 62.5%;  /* ovo definira sto je 1rem !! */
 }
@@ -70,6 +75,9 @@ a:active {
 	position: relative;
 }
 
+.zeleno {
+	color: #1b921b;
+}
 
 #navbar ul {
 	padding: 1rem;
@@ -120,6 +128,9 @@ a:active {
 	margin-top: 10rem;
 }
 
+.boja {
+	color: red
+}
 
 .slika-baza
 	{
@@ -131,7 +142,7 @@ a:active {
 	.slika-gore
 	{
 		position: absolute;
-		top: 5rem;
+		top: 18rem;
 		left: 19rem;
 		z-index: 2;
 		border-radius: 6rem;
