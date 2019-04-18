@@ -6,7 +6,7 @@
 
 
 .podjela {
-height: 90rem;
+height: 88rem;
 }
 
 html {
@@ -142,7 +142,7 @@ a:active {
 	.slika-gore
 	{
 		position: absolute;
-		top: 18rem;
+		top: 19rem;
 		left: 19rem;
 		z-index: 2;
 		border-radius: 6rem;
