@@ -1,0 +1,22 @@
+{
+  "name": "krunica",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alenskupnjak/krunica.git"
+  },
+  "author": "AlenS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alenskupnjak/krunica/issues"
+  },
+  "homepage": "https://github.com/alenskupnjak/krunica#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

@@ -5,6 +5,19 @@
 }
 
 
+
+.row {
+  max-width: 114rem;
+	background-color: #dddd;
+	margin: 0 auto;
+	position: relative;
+}
+
+.uljepsaj_sliku {
+ box-shadow: 0 3rem 6rem rgba(#000, 0.1); 
+
+ }
+
 .podjela {
 height: 86rem;
 }
@@ -68,13 +81,6 @@ a:active {
 	color: blueviolet;
 }
 
-.row {
-  max-width: 114rem;
-	background-color: #ccc;
-	margin: 0 auto;
-	position: relative;
-}
-
 .zeleno {
 	color: #1b921b;
 }
@@ -96,7 +102,7 @@ a:active {
 
 .row .col-1-of-2 {
   width: 55.5rem;
-	background-color: #ccc;
+/*	background-color: #ccc; */
 	float: left; 
 }
 
@@ -124,7 +130,7 @@ a:active {
 	}
 
 .mreza {
-	background-color: #0C3DBA;
+	background-color: #bdcaa5;
 	margin-top: 10rem;
 }
 
