@@ -19,7 +19,7 @@
  }
 
 .podjela {
-height: 86rem;
+height: 80rem;
 }
 
 html {
@@ -31,7 +31,7 @@ p {
 }
 
 h1 {
-	font-size: 4rem;
+	font-size: 2rem;
 	padding: 1rem;
 }
 
@@ -39,8 +39,12 @@ h2 {
 	font-size: 3rem;
 }
 
+.text-mali {
+	font-size: 1rem;
+}
+
 .text-srednji {
-	font-weight: 400;
+	font-size: 2rem;
 }
 
 .text-veliki {
@@ -111,9 +115,35 @@ a:active {
 }
 
 
+.spusti {
+	margin-top: 1rem;
+	margin-bottom: 3rem;
+	/* padding: 1rem; */
+}
+
 .row .col-1-of-3 {
   width: 36rem;
   float: left; 
+}
+.row .col-1-of-3:not(:last-child) {
+	margin-right: 3rem;
+}
+
+.row .col-1-of-4 {
+  width: 26rem;
+  float: left; 
+}
+.row .col-1-of-4:not(:last-child) {
+	margin-right: 3rem;
+}
+
+
+.row .col-1-of-6 {
+  width: 18rem;
+  float: left; 
+}
+.row .col-1-of-6:not(:last-child) {
+	margin-right: 3rem;
 }
 
 .row .col-1-of-3:not(:last-child) {
@@ -148,7 +178,7 @@ a:active {
 	.slika-gore
 	{
 		position: absolute;
-		top: 19rem;
+		top: 8rem;
 		left: 19rem;
 		z-index: 2;
 		border-radius: 6rem;
