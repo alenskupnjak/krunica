@@ -168,22 +168,41 @@ a:active {
 	color: red
 }
 
-.slika-baza
-	{
+.slika-baza{   /*  NA KRAJU CES OVO OBRISATI*/
 		position:relative;
 		top: 10px;
 		left: 10px;
 		z-index: 1;
 	}
-	.slika-gore
-	{
+	.slika-gore{
+		position: absolute;
+		top: 19rem;
+		left: 19rem;
+		z-index: 2;
+		border-radius: 6rem;
+		transform: scale(0.8);
+  }
+
+  .sli-baza{   /*  NA KRAJU CES OVO OBRISATI*/
+		position:relative;
+		top: 10px;
+		left: 10px;
+		z-index: 1;
+	}
+	.sli-gore{
 		position: absolute;
 		top: 8rem;
 		left: 19rem;
 		z-index: 2;
 		border-radius: 6rem;
 		transform: scale(0.8);
-	}
+  }
+  
+
+
+
+
+
 /*  
 
 .row {
@@ -230,3 +249,144 @@ a:active {
   
 }
 */
+
+
+.card {
+  perspective: 150rem;
+  position: relative;
+	height: 52rem;
+}
+
+.card__side {
+    height: 52rem;
+    transition: all .8s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(#000, 15%);
+}
+
+.card__side--front {
+      background-color: #fff;
+}
+
+.card__side--back {
+			transform: rotateY(180deg);
+}
+.card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+}
+.card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #ffb900, #6730ff);
+}
+.card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #7ed56f, #6730ff);
+}
+			
+
+	.card:hover .card__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  .card:hover .card__side--back {
+    transform: rotateY(0);
+  }
+
+ /* // prednja strana karte */
+  .card__picture {
+    background-size: cover;
+    height: 40rem;
+		background-blend-mode: screen;
+		clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+	}
+
+	.card__picture--1 {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
+        url(./slike/slika01.jpg);
+      }
+
+  .card__picture--2 {
+        background-image: linear-gradient(to right bottom, #ffb900, #28b485),
+        url(./slike/slika04.jpg);
+      }
+
+
+  .card__heading {
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+  }
+
+ .card__heading-span {
+		padding: 1rem 1rem;
+ }
+ .card__heading-span--1 {
+       background-image:  linear-gradient(to right bottom, 
+       rgba(#2998ff, 0.7),
+       rgba(#5643fa, 0.7));
+    }
+.card__heading-span--2 {
+       background-image:  linear-gradient(to right bottom, 
+       rgba(#ffb900, 0.7),
+       rgba(#55c57a, 0.7));
+    }
+
+ 
+
+
+.card__details {
+	padding: 3rem;
+}
+
+.card__details ul {
+    list-style: none; 
+    width: 80%;
+		margin: 0 auto;
+}
+.card__details ul li {
+	    font-size: 2rem;
+      text-align: center;
+      padding: 1rem;
+}
+.card__details ul li:not(:last-child){
+        border-bottom: 1px solid #ffb900;
+      }
+
+
+ /* //straznja strana karte */
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    text-align: center;
+  }
+  
+  .card__price-box {
+    text-align: center;
+    color: #ffb900;
+    margin-bottom: 8rem;
+  }
+
+  .card__price-only{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100;
+  }
+
+
+
