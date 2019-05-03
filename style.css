@@ -44,6 +44,7 @@ html {
   font-size: 62.5%; }
 
 body {
+  font-family: "Lato", sans-serif;
   box-sizing: border-box; }
 
 .polja-smjer {
@@ -146,6 +147,9 @@ body {
 
 .dan h1 p {
   color: yellow; }
+
+.naglaseno {
+  color: orangered; }
 
 .podjela {
   height: 80rem; }
