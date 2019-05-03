@@ -1,0 +1,17 @@
+.zaglavlje {
+
+  background-color: rgb(201, 170, 170);
+  color: yellow
+
+  // &dan h1 p {
+  //   color: yellow
+  // }
+
+  &dan col-2-of-4 h1 p {
+    color: yellow
+  }
+}
+
+.dan h1 p {
+  color: yellow
+}
