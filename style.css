@@ -59,7 +59,6 @@ body {
     margin-bottom: .5rem;
     display: inline-block;
     background-image: linear-gradient(to right, #7ed56f, #28b485);
-    -webkit-background-clip: text;
     color: transparent; }
   .polja-smjer:hover {
     transform: translateY(-1.5rem) scale(1.1);
@@ -84,7 +83,6 @@ body {
     margin-bottom: .5rem;
     display: inline-block;
     background-image: linear-gradient(to right, #7ed56f, #28b485);
-    -webkit-background-clip: text;
     color: transparent; }
   .opis-zrna:hover {
     transform: scale(1.1);
@@ -104,7 +102,6 @@ body {
     margin-bottom: .5rem;
     display: inline-block;
     background-image: linear-gradient(to right, #7ed56f, #28b485);
-    -webkit-background-clip: text;
     color: transparent; }
   .opis-molitve:hover {
     transform: translateY(1.5rem) scale(1.1);
@@ -123,9 +120,9 @@ body {
 .slika-gore {
   position: absolute;
   top: 8rem;
-  left: 57rem;
+  left: 18rem;
   z-index: 2;
-  border-radius: 6rem;
+  border-radius: 5rem;
   transform: scale(0.8); }
 
 .sli-baza {
@@ -137,16 +134,15 @@ body {
 
 .sli-gore {
   position: absolute;
-  left: 57rem;
+  left: 18rem;
   top: 8rem;
   z-index: 2;
-  border-radius: 6rem;
+  border-radius: 5rem;
   transform: scale(0.8); }
 
 .zaglavlje {
   background-color: #c9aaaa;
-  color: yellow .zaglavlje dan col-2-of-4 h1 p;
-    color-color: yellow; }
+  color: yellow; }
 
 .dan h1 p {
   color: yellow; }

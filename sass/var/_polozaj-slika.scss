@@ -10,7 +10,7 @@
   top: $polozaj-gore-y;
   left: $polozaj-gore-x;
   z-index: 2;
-  border-radius: 6rem;
+  border-radius: 5rem;
   transform: scale(0.8);
 }
 
@@ -26,42 +26,7 @@
   position: absolute;
   left: $polozaj-gore-x;
   top: $polozaj-gore-y;
-  
-  // top: 8rem;
-  // left: 19rem;
   z-index: 2;
-  border-radius: 6rem;
+  border-radius: 5rem;
   transform: scale(0.8);
 }
-
-
-
-// .slika-baza{   /*  NA KRAJU CES OVO OBRISATI*/
-//   position:relative;
-//   top: 10px;
-//   left: 10px;
-//   z-index: 1;
-// }
-// .slika-gore{
-//   position: absolute;
-//   top: 19rem;
-//   left: 19rem;
-//   z-index: 2;
-//   border-radius: 6rem;
-//   transform: scale(0.8);
-// }
-
-// .sli-baza{   /*  NA KRAJU CES OVO OBRISATI*/
-//   position:relative;
-//   top: 10px;
-//   left: 10px;
-//   z-index: 1;
-// }
-// .sli-gore{
-//   position: absolute;
-//   top: 8rem;
-//   left: 19rem;
-//   z-index: 2;
-//   border-radius: 6rem;
-//   transform: scale(0.8);
-// }
