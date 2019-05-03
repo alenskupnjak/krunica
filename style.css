@@ -44,7 +44,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Cardo", serif;
   box-sizing: border-box; }
 
 .polja-smjer {
@@ -108,8 +108,7 @@ body {
     transform: translateY(1.5rem) scale(1.1);
     font-size: 5rem; }
   .opis-molitve p {
-    font-size: 2rem;
-    color: blue; }
+    font-size: 2rem; }
 
 .slika-baza {
   /*  NA KRAJU CES OVO OBRISATI*/
@@ -195,7 +194,7 @@ h2 {
 body {
   /* background-image: url(img/pocetna.jpg); */
   /* background-repeat: repeat; */
-  font-family: "Lato", cursive;
+  font-family: "Cardo", cursive;
   text-align: center; }
 
 a:link {
