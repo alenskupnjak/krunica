@@ -41,7 +41,8 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  background-color: antiquewhite; }
 
 body {
   font-family: "Cardo", serif;
@@ -70,8 +71,7 @@ body {
 .opis-zrna {
   font-size: 2rem;
   margin-top: 1rem;
-  background-color: orangered;
-  color: violet;
+  background-color: #FCF9C4;
   background-size: 1.5rem;
   padding: 1rem;
   margin-bottom: 4rem;
@@ -110,6 +110,9 @@ body {
   .opis-molitve p {
     font-size: 2rem; }
 
+.molitva p {
+  text-align: left; }
+
 .slika-baza {
   /*  NA KRAJU CES OVO OBRISATI*/
   position: relative;
@@ -141,7 +144,7 @@ body {
   transform: scale(0.8); }
 
 .zaglavlje {
-  background-color: #e9d6d6;
+  background-color: #fffcc3;
   color: yellow; }
 
 .dan h1 p {
