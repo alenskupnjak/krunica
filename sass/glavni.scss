@@ -60,7 +60,8 @@ h2 {
 }
 
 .text-veliki {
-	font-size: 3rem;
+  font-size: 3rem;
+  text-align: center;
 }
 
 body {
@@ -139,12 +140,12 @@ a:active {
 .card {
   perspective: 150rem;
   position: relative;
-	height: 52rem;
+	height: 56rem;
 }
 
 .card__side {
-    height: 52rem;
-    transition: all .8s;
+    height: 60rem;
+    transition: all 1s;
     position: absolute;
     top: 0;
     left: 0;
@@ -163,7 +164,8 @@ a:active {
 			transform: rotateY(180deg);
 }
 .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+        // background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+        background-image: linear-gradient(to right bottom, #7ed56f, #6730ff);
 }
 .card__side--back-2 {
         background-image: linear-gradient(to right bottom, #ffb900, #6730ff);
@@ -226,7 +228,6 @@ a:active {
     }
 
  
-
 .card__details {
 	padding: 3rem;
 }
@@ -258,8 +259,15 @@ a:active {
   
   .card__price-box {
     text-align: center;
-    color: #ffb900;
+    // color: #ffb900;
+    color: blueviolet;
     margin-bottom: 8rem;
+  }
+  .card__price-box p a {
+    color:red;
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   .card__price-only{
