@@ -1,21 +1,4 @@
-.slika-baza {   /*  NA KRAJU CES OVO OBRISATI*/
-  position: relative;
-  top: $polozaj-glavne-y;
-  left: $polozaj-glavne-x;
-  z-index: 1;
-}
-
-.slika-gore {
-  position: absolute;
-  top: $polozaj-gore-y;
-  left: $polozaj-gore-x;
-  z-index: 2;
-  border-radius: 5rem;
-  transform: scale(0.8);
-}
-
-
-.sli-baza {   /*  NA KRAJU CES OVO OBRISATI*/
+.sli-baza {  
   position:relative;
   top: $polozaj-glavne-y;
   left: $polozaj-glavne-x;
@@ -30,3 +13,20 @@
   border-radius: 5rem;
   transform: scale(0.8);
 }
+
+
+// .slika-baza {   /*  NA KRAJU CES OVO OBRISATI*/
+//   position: relative;
+//   top: $polozaj-glavne-y;
+//   left: $polozaj-glavne-x;
+//   z-index: 1;
+// }
+
+// .slika-gore {
+//   position: absolute;
+//   top: $polozaj-gore-y;
+//   left: $polozaj-gore-x;
+//   z-index: 2;
+//   border-radius: 5rem;
+//   transform: scale(0.8);
+// }
