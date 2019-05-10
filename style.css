@@ -78,16 +78,13 @@ body {
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.15);
-  transition: transform .5s; }
+  transition: transform 1s; }
   .opis-zrna__icon {
     font-size: 4rem;
     margin-bottom: .5rem;
     display: inline-block;
     background-image: linear-gradient(to right, #7ed56f, #28b485);
     color: transparent; }
-  .opis-zrna:hover {
-    transform: scale(1.1);
-    font-size: 3rem; }
 
 .opis-molitve {
   background-color: rgba(255, 255, 255, 0.8);
