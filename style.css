@@ -119,8 +119,8 @@ body {
 
 .sli-gore {
   position: absolute;
-  left: 18rem;
   top: 8rem;
+  left: 18rem;
   z-index: 2;
   border-radius: 5rem;
   transform: scale(0.8); }

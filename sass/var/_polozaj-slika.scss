@@ -7,8 +7,8 @@
 
 .sli-gore {
   position: absolute;
-  left: $polozaj-gore-x;
   top: $polozaj-gore-y;
+  left: $polozaj-gore-x;
   z-index: 2;
   border-radius: 5rem;
   transform: scale(0.8);
