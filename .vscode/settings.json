@@ -3,8 +3,18 @@
     "krunica"
   ],
   "workbench.colorCustomizations": {
-    "activityBar.background": "#0D3513",
-    "titleBar.activeBackground": "#134A1A",
-    "titleBar.activeForeground": "#F5FDF6"
-  }
+    "activityBar.background": "#0d3512",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#5d4cd3",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "titleBar.activeBackground": "#030c04",
+    "titleBar.inactiveBackground": "#030c0499",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveForeground": "#e7e7e799",
+    "statusBar.background": "#030c04",
+    "statusBarItem.hoverBackground": "#0d3512",
+    "statusBar.foreground": "#e7e7e7"
+  },
+  "peacock.color": "#030c04"
 }
