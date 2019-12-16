@@ -25,12 +25,12 @@ speed-measure-plugin.json
 
 # IDE - VSCode
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+# !.vscode/settings.json
+# !.vscode/tasks.json
+# !.vscode/launch.json
+# !.vscode/extensions.json
 .history/*
-.vscode\sftp.json
+# .vscode\sftp.json
 # misc
 /.sass-cache
 /connect.lock
