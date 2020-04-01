@@ -53,7 +53,7 @@ body {
   background-size: 1.5rem;
   padding: 2rem;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 0.2rem;
   box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.15);
   transition: transform 0.5s; }
   .polja-smjer__icon {
@@ -76,7 +76,7 @@ body {
   padding: 1rem;
   margin-bottom: 2rem;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 0.2rem;
   box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.15);
   transition: transform 1s; }
   .opis-zrna__icon {
@@ -92,30 +92,39 @@ body {
   background-size: 1.5rem;
   padding: 2rem;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 0.2rem;
   box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.15);
-  transition: transform 0.5s; }
+  transition: transform 0.5s; 
+}
+
   .opis-molitve__icon {
     font-size: 4rem;
     margin-bottom: .5rem;
     display: inline-block;
     background-image: linear-gradient(to right, #7ed56f, #28b485);
-    color: transparent; }
+    color: transparent; 
+  }
+
   .opis-molitve:hover {
     transform: translateY(1.5rem) scale(1.1);
-    font-size: 5rem; }
+    font-size: 5rem; 
+  }
+
   .opis-molitve p {
-    font-size: 2rem; }
+    font-size: 2rem; 
+  }
 
 .molitva p {
   text-align: left;
-  color: #1b921b; }
+  color: #1b921b; 
+}
 
 .sli-baza {
   position: relative;
   top: 0rem;
   left: 0rem;
-  z-index: 1; }
+  z-index: 1; 
+}
 
 .sli-gore {
   position: absolute;
@@ -123,7 +132,8 @@ body {
   left: 18rem;
   z-index: 2;
   border-radius: 5rem;
-  transform: scale(0.8); }
+  transform: scale(0.8); 
+}
 
 .zaglavlje {
   background-color: #fffcc3;
@@ -148,7 +158,7 @@ body {
   left: 0;
   width: 80%;
   backface-visibility: hidden;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   overflow: hidden;
   box-shadow: 0 1.5rem 4rem black; }
 
@@ -178,13 +188,16 @@ body {
   background-size: cover;
   height: 40rem;
   background-blend-mode: screen;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); 
+}
 
 .card__picture--1 {
-  background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(./slike/slika01.jpg); }
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(./slike/slika01.jpg); 
+}
 
 .card__picture--2 {
-  background-image: linear-gradient(to right bottom, #ffb900, #28b485), url(./slike/slika04.jpg); }
+  background-image: linear-gradient(to right bottom, #ffb900, #28b485), url(./slike/slika04.jpg); 
+}
 
 .card__heading {
   font-size: 3rem;
@@ -194,32 +207,40 @@ body {
   color: #fff;
   position: absolute;
   top: 12rem;
-  right: 2rem; }
+  right: 2rem; 
+}
 
 .card__heading-span {
-  padding: 1rem 1rem; }
+  padding: 1rem 1rem; 
+}
 
 .card__heading-span--1 {
-  background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.7), rgba(86, 67, 250, 0.7)); }
+  background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.7), rgba(86, 67, 250, 0.7)); 
+}
 
 .card__heading-span--2 {
-  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.7), rgba(85, 197, 122, 0.7)); }
+  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.7), rgba(85, 197, 122, 0.7)); 
+}
 
 .card__details {
-  padding: 3rem; }
+  padding: 3rem; 
+}
 
 .card__details ul {
   list-style: none;
   width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto; 
+}
 
 .card__details ul li {
   font-size: 2rem;
   text-align: center;
-  padding: 1rem; }
+  padding: 1rem; 
+}
 
 .card__details ul li:not(:last-child) {
-  border-bottom: 1px solid #ffb900; }
+  border-bottom: 1px solid #ffb900; 
+}
 
 /* //straznja strana karte */
 .card__cta {
@@ -228,29 +249,36 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
-  text-align: center; }
+  text-align: center; 
+}
 
 .card__price-box {
   text-align: center;
-  color: blueviolet; }
+  color: blueviolet; 
+}
 
 .card__price-box p a {
   font-size: 2rem;
-  margin-top: 1rem; }
+  margin-top: 1rem; 
+}
 
 .card__price-only {
   font-size: 1.5rem;
-  text-transform: uppercase; }
+  text-transform: uppercase; 
+}
 
 .card__price-value {
   font-size: 6rem;
-  font-weight: 100; }
+  font-weight: 100; 
+}
 
 .podjela {
-  height: 80rem; }
+  height: 80rem; 
+}
 
 p {
-  font-size: 2rem; }
+  font-size: 2rem; 
+}
 
 .izlaz {
   display: block;
@@ -259,32 +287,37 @@ p {
   /* background-size: 0.5rem; */
   padding: 0.2rem;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 1.2rem;
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
   transition: transform 1s; }
 
 h1 {
   font-size: 2rem;
-  padding: 1rem; }
+  padding: 1rem; 
+}
 
 h2 {
-  font-size: 2.5rem; }
+  font-size: 2.5rem; 
+}
 
 .text-mali {
   font-size: 1rem;
   border-radius: 1rem;
-  opacity: 0.5; }
+  opacity: 0.5; 
+}
 
 .text-mali:hover {
   font-size: 1rem;
   opacity: 1;
   transform: scale(1.1);
-  transition: all 0.3s; }
+  transition: all 0.3s; 
+}
 
 .text-srednji {
   font-size: 2rem;
   padding: 1rem;
-  margin-top: 1rem auto; }
+  margin-top: 1rem auto; 
+}
 
 .text-veliki {
   font-size: 3rem;
@@ -294,18 +327,21 @@ body {
   /* background-image: url(img/pocetna.jpg); */
   /* background-repeat: repeat; */
   font-family: "Cardo", cursive;
-  text-align: center; }
+  text-align: center; 
+}
 
 a:link {
   text-decoration: none;
   color: #c2280c;
-  opacity: 0.5; }
+  opacity: 0.5; 
+}
 
 a:visited {
   text-decoration: none;
   color: #c2280c;
   transform: scale(1.2);
-  opacity: 1; }
+  opacity: 1; 
+}
 
 a:hover {
   /* color: rgb(111, 189, 22); */
@@ -314,18 +350,22 @@ a:hover {
   opacity: 1;
   transform: scale(1.3);
   font-size: 2rem;
-  transition: all 0.3s; }
+  transition: all 0.3s; 
+}
 
 a:active {
   text-decoration: none;
-  color: #c2280c; }
+  color: #c2280c; 
+}
 
 .aktivna {
-  font-size: 26px;
-  color: blueviolet; }
+  font-size: 1.5rem;
+  color: blueviolet; 
+}
 
 .zeleno {
-  color: #1b921b; }
+  color: #1b921b; 
+}
 
 #navbar ul {
   padding: 1rem;
@@ -333,14 +373,17 @@ a:active {
   text-align: center;
   background-color: #dbd0d0;
   margin: 1rem;
-  margin-right: 1rem; }
+  margin-right: 1rem; 
+}
 
 #navbar ul li {
   display: inline;
   margin-right: 5rem;
-  font-size: 2rem; }
+  font-size: 2rem; 
+}
 
 .spusti {
   margin-top: 1rem;
   margin-bottom: 3rem;
-  /* padding: 1rem; */ }
+  /* padding: 1rem; */ 
+}
