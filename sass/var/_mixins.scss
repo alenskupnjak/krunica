@@ -1,8 +1,0 @@
-@mixin clearfix {
-  &::after {
-    content: "";  // ne zelimo da se ista prikazuje
-    display: table;
-    clear: both;  // cistimo float left i right
-
-  }
-}
