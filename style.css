@@ -1,12 +1,34 @@
+html {
+  font-size: 62.5%;
+  background-color: #fff; 
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box }
+  
+  
+.podjela {
+    height: 80rem; 
+}
+
 .row {
   max-width: 114rem;
-  margin: 0 auto; }
-  .row:not(:last-child) {
-    margin-bottom: 2rem; }
-  .row::after {
-    content: "";
-    display: table;
-    clear: both; }
+  margin: 0 auto; 
+}
+
+.row:not(:last-child) {
+    margin-bottom: 2rem; 
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both; 
+}
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
@@ -33,21 +55,13 @@
 .col-1-2 {
   width: calc((100% - 3rem) / 2); }
 
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
 
-html {
-  font-size: 62.5%;
-  background-color: #fff; }
 
 body {
   font-family: "Cardo", serif;
   box-sizing: border-box;
-  background-color: #fff; }
+  background-color: #fff; 
+}
 
 .polja-smjer {
   background-color: #f7f7f7;
@@ -123,16 +137,20 @@ body {
 }
 
 .sli-baza {
-  position: relative;
+  position: absolute;
   top: 0rem;
   left: 0rem;
-  z-index: 1; 
+  z-index: 1;
+  width: 420px;
+  height: 600px;
 }
 
 .sli-gore {
-  position: absolute;
-  top: 7rem;
-  left: 18rem;
+  position: relative;
+  width: 200px;
+  height: 300px;
+  top: 6rem;
+  left: -6.5rem;
   z-index: 2;
   border-radius: 5rem;
   transform: scale(0.8); 
@@ -281,9 +299,6 @@ body {
   font-weight: 100; 
 }
 
-.podjela {
-  height: 80rem; 
-}
 
 p {
   font-size: 2rem; 
