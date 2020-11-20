@@ -3,25 +3,25 @@ html {
   background-color: #fff;
 }
 
-*,
-*::after,
-*::before {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 .podjela {
-  height: 80rem;
+  height: 100vh;
+  overflow: auto;
 }
 
 .row {
   max-width: 114rem;
+  /* height: 60vh; */
   margin: 0 auto;
 }
 
 .row:not(:last-child) {
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .row::after {
@@ -49,6 +49,7 @@ html {
 }
 .row .col-2-of-4 {
   width: calc(2 * (100% - 3 * 3rem) / 4 + 3rem);
+  margin: auto;
 }
 .row .col-3-of-4 {
   width: calc((100% - 3 * 3rem) * 3 / 4 + 2 * 3rem);
@@ -73,28 +74,33 @@ body {
 }
 
 .polja-smjer {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  margin: auto;
   background-color: #f7f7f7;
   /* background-color: rgba(255, 255, 255, 0.8); */
   background-size: 1.5rem;
-  padding: 2rem;
+  padding: 0.5rem;
   text-align: center;
   border-radius: 0.2rem;
   box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.15);
   transition: transform 0.5s;
 }
+
+.polja-smjer img {
+  margin: 0 60px 0 60px;
+  width: 30px;
+  height: 40px;
+}
+
 .polja-smjer__icon {
   font-size: 4rem;
   margin-bottom: 0.5rem;
   display: inline-block;
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   color: transparent;
-}
-.polja-smjer:hover {
-  transform: translateY(-1.5rem) scale(1.1);
-  font-size: 5rem;
-}
-.polja-smjer__text p a {
-  color: blue;
 }
 
 .opis-zrna {
@@ -120,13 +126,14 @@ body {
 .opis-molitve {
   /* background-color: rgba(255, 255, 255, 0.8); */
   background-color: #f7f7f7;
-  margin-top: 5rem;
+  margin-top: 2rem;
   background-size: 1.5rem;
   padding: 2rem;
   text-align: center;
   border-radius: 0.2rem;
   box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.15);
   transition: transform 0.5s;
+  font-size: 2rem;
 }
 
 .opis-molitve__icon {
@@ -137,10 +144,10 @@ body {
   color: transparent;
 }
 
-.opis-molitve:hover {
+/* .opis-molitve:hover {
   transform: translateY(1.5rem) scale(1.1);
   font-size: 5rem;
-}
+} */
 
 .opis-molitve p {
   font-size: 2rem;
@@ -153,11 +160,13 @@ body {
 
 .sli-baza {
   position: absolute;
-  top: 0rem;
-  left: 0rem;
+  top: 0;
+  left: 0;
   z-index: 1;
   width: 420px;
   height: 600px;
+  background-color: transparent !important;
+  color: red;
 }
 
 .sli-gore {
@@ -169,14 +178,17 @@ body {
   z-index: 2;
   border-radius: 5rem;
   transform: scale(0.8);
+  color: red;
+  background-color: transparent;
 }
 
 .zaglavlje {
+  display: flex;
   background-color: #f7f7f7;
-  color: yellow;
+  /* color: yellow; */
 }
 
-.dan h1 p {
+.dan h1 {
   color: #a8a846;
 }
 
@@ -235,7 +247,8 @@ body {
 /* // prednja strana karte */
 .card__picture {
   background-size: cover;
-  height: 40rem;
+  height: 100%;
+  width: 80%;
   background-blend-mode: screen;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
@@ -351,8 +364,8 @@ p {
 }
 
 h1 {
-  font-size: 2rem;
-  padding: 1rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
 }
 
 h2 {
@@ -403,15 +416,14 @@ a:visited {
   opacity: 1;
 }
 
-a:hover {
-  /* color: rgb(111, 189, 22); */
+/* a:hover {
   color: green;
   text-decoration: none;
   opacity: 1;
   transform: scale(1.3);
   font-size: 2rem;
   transition: all 0.3s;
-}
+} */
 
 a:active {
   text-decoration: none;
@@ -450,6 +462,68 @@ a:active {
 }
 
 .uljepsaj_sliku {
+  width: 420px;
+  height: 600px;
   /* background-color: blue; */
   background-color: #f7f7f7;
+}
+
+.slika-krunice {
+  position: relative;
+  left: 0;
+  top: 0;
+  /* background-color: #6730ff; */
+  /* height: 60vh; */
+  width: 100%;
+}
+
+/*Mobile*/
+/* aktivira se na sve manje od 768 px*/
+@media only screen and (max-width: 768px) {
+  .uljepsaj_sliku {
+    display: none;
+  }
+
+  .row .col-1-of-2 {
+    width: 100%;
+  }
+
+  .col-1-of-2 {
+    width: 100%;
+  }
+  .card__picture {
+    width: 100%;
+  }
+  .card__side {
+    width: 100%;
+  }
+
+  .sli-baza {
+    position: absolute;
+    /* top: -50%; */
+    left: 50%;
+    width: 130px;
+    height: 180px;
+    transform: translateX(-50%);
+    color: transparent !important;
+    opacity: 0.2;
+    pointer-events: none;
+    /* display: none; */
+  }
+  .sli-gore {
+    display: none;
+  }
+
+  .col-1-of-2.slika-krunice {
+    /* display: none; */
+    position: absolute;
+    /* background-color: red; */
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+  }
+
+  .row .col-2-of-4 {
+    width: 100%;
+  }
 }
