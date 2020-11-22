@@ -225,16 +225,16 @@ body {
 }
 
 .card__side--back-1 {
-  background-image: linear-gradient(to right bottom, #7ed56f, #6730ff);
+  background-image: linear-gradient(to right bottom, #fff, #FFE100);
 }
 
-.card__side--back-2 {
+/* .card__side--back-2 {
   background-image: linear-gradient(to right bottom, #ffb900, #6730ff);
-}
+} */
 
-.card__side--back-3 {
+/* .card__side--back-3 {
   background-image: linear-gradient(to right bottom, #7ed56f, #6730ff);
-}
+} */
 
 .card:hover .card__side--front {
   transform: rotateY(-180deg);
@@ -259,11 +259,11 @@ body {
   /* background-image: linear-gradient(to right bottom,  #f7f7f7, #f7f7f7), url(./slike/slika01.jpg);  */
 }
 
-.card__picture--2 {
+/* .card__picture--2 {
   background-image: linear-gradient(to right bottom, #ffb900, #758b84),
     url(./slike/slika04.jpg);
-  /* background-image: linear-gradient(to right bottom,  #f7f7f7, #f7f7f7), url(./slike/slika04.jpg);  */
-}
+
+} */
 
 .card__heading {
   font-size: 3rem;
@@ -328,13 +328,15 @@ body {
 }
 
 .card__price-box {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   color: blueviolet;
 }
 
 .card__price-box p a {
   font-size: 2rem;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 
 .card__price-only {
@@ -388,7 +390,10 @@ h2 {
 .text-srednji {
   font-size: 2rem;
   padding: 1rem;
-  margin-top: 1rem auto;
+  /* margin-top: 1rem auto; */
+  /* margin: 1rem auto !important; */
+  color: #263238 !important;
+  /* color: blue !important; */
 }
 
 .text-veliki {
