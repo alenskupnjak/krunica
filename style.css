@@ -95,45 +95,45 @@ body {
   height: 40px;
 }
 
-.polja-smjer__icon {
+/* .polja-smjer__icon {
   font-size: 4rem;
   margin-bottom: 0.5rem;
   display: inline-block;
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   color: transparent;
-}
+} */
 
 .opis-zrna {
   font-size: 2rem;
   margin-top: 1rem;
   background-color: #f7f7f7;
-  background-size: 1.5rem;
-  padding: 1rem;
+  /* background-size: 1.5rem; */
+  padding: 0.5rem;
   margin-bottom: 2rem;
   text-align: center;
   border-radius: 0.2rem;
   box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.15);
   transition: transform 1s;
 }
-.opis-zrna__icon {
+/* .opis-zrna__icon {
   font-size: 4rem;
   margin-bottom: 0.5rem;
   display: inline-block;
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   color: transparent;
-}
+} */
 
 .opis-molitve {
   /* background-color: rgba(255, 255, 255, 0.8); */
   background-color: #f7f7f7;
   margin-top: 2rem;
-  background-size: 1.5rem;
+  /* background-size: 1.5rem; */
   padding: 2rem;
   text-align: center;
-  border-radius: 0.2rem;
+  /* border-radius: 0.2rem; */
   box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.15);
   transition: transform 0.5s;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .opis-molitve__icon {
@@ -149,9 +149,9 @@ body {
   font-size: 5rem;
 } */
 
-.opis-molitve p {
+/* .opis-molitve p {
   font-size: 2rem;
-}
+} */
 
 .molitva p {
   text-align: left;
@@ -524,7 +524,7 @@ a:active {
     position: absolute;
     /* background-color: red; */
     left: 50%;
-    top: 10px;
+    top: 5px;
     transform: translateX(-50%);
   }
 
