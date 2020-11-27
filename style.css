@@ -407,10 +407,14 @@ body {
   text-align: center;
 }
 
-a:link {
+.polja-smjer a:link {
   text-decoration: none;
-  color: #c2280c;
+  color:#a8a846;
   opacity: 0.5;
+}
+
+.polja-smjer i {
+  color:#a8a846;
 }
 
 a:visited {
