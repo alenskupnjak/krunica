@@ -1,12 +1,14 @@
-html {
-  font-size: 62.5%;
-  background-color: #fff;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cardo', cursive;
+  box-sizing: border-box;
+  background-color: #fff;
+  text-align: center;
 }
 
 .podjela {
@@ -15,7 +17,7 @@ html {
 }
 
 .row {
-  max-width: 114rem;
+  max-width: 1100px;
   /* height: 60vh; */
   margin: 0 auto;
 }
@@ -24,11 +26,11 @@ html {
   margin-bottom: 0.5rem;
 }
 
-.row::after {
+/* .row::after {
   content: '';
   display: table;
   clear: both;
-}
+} */
 .row [class^='col-'] {
   float: left;
 }
@@ -67,11 +69,7 @@ html {
   width: calc((100% - 3rem) / 2);
 }
 
-body {
-  font-family: 'Cardo', serif;
-  box-sizing: border-box;
-  background-color: #fff;
-}
+
 
 .polja-smjer {
   display: flex;
@@ -81,7 +79,7 @@ body {
   margin: auto;
   background-color: #f7f7f7;
   /* background-color: rgba(255, 255, 255, 0.8); */
-  background-size: 1.5rem;
+  /* background-size: 1.5rem; */
   padding: 0.3rem;
   text-align: center;
   border-radius: 0.2rem;
@@ -95,16 +93,19 @@ body {
   height: 40px;
 }
 
-/* .polja-smjer__icon {
-  font-size: 4rem;
-  margin-bottom: 0.5rem;
-  display: inline-block;
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
-  color: transparent;
-} */
+.polja-smjer a:link {
+  text-decoration: none;
+  color: #a8a846;
+  opacity: 0.5;
+}
+
+.polja-smjer i {
+  color: #a8a846;
+  font-size: 1.2rem;
+}
 
 .opis-zrna {
-  font-size: 2rem;
+  font-size: 1.2rem;
   margin-top: 1rem;
   background-color: #f7f7f7;
   /* background-size: 1.5rem; */
@@ -115,13 +116,6 @@ body {
   box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.15);
   transition: transform 1s;
 }
-/* .opis-zrna__icon {
-  font-size: 4rem;
-  margin-bottom: 0.5rem;
-  display: inline-block;
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
-  color: transparent;
-} */
 
 .opis-molitve {
   /* background-color: rgba(255, 255, 255, 0.8); */
@@ -133,33 +127,17 @@ body {
   /* border-radius: 0.2rem; */
   box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.15);
   transition: transform 0.5s;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
-/* .opis-molitve__icon {
-  font-size: 4rem;
-  margin-bottom: 0.5rem;
-  display: inline-block;
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
-  color: transparent;
-} */
-
-/* .opis-molitve:hover {
-  transform: translateY(1.5rem) scale(1.1);
-  font-size: 5rem;
-} */
-
-/* .opis-molitve p {
-  font-size: 2rem;
-} */
-
-.molitva p {
+.molitva {
+  font-size: 1.2rem;
   text-align: left;
   color: #1b921b;
 }
 
 .sli-baza {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   z-index: 1;
@@ -169,22 +147,26 @@ body {
 }
 
 .sli-gore {
-  position: relative;
-  width: 200px;
-  height: 300px;
-  top: 6rem;
-  left: -6.5rem;
+  position: absolute;
+  width: 180px;
+  height: 260px;
+  /* top: 50%; */
+  /* top: 6rem; */
+  left: 50%;
+  /* right: 50%; */
+  /* left: rem; */
   z-index: 2;
   border-radius: 5rem;
-  transform: scale(0.8);
+  /* transform: scale(0.8); */
   color: red;
-  background-color: transparent;
+  /* transform: translateX(-50%); */
+  /* background-color: transparent; */
+  transform: translateX(-50%) translateY(35%);
 }
 
 .zaglavlje {
   display: flex;
   background-color: #f7f7f7;
-  /* color: yellow; */
 }
 
 .dan h1 {
@@ -202,7 +184,7 @@ body {
 }
 
 .card__side {
-  height: 60rem;
+  height: 600px;
   transition: all 1s;
   position: absolute;
   top: 0;
@@ -216,7 +198,6 @@ body {
 
 .card__side--front {
   background-color: #f7f7f7;
-  /* background-color: blue;  */
 }
 
 .card__side--back {
@@ -224,16 +205,8 @@ body {
 }
 
 .card__side--back-1 {
-  background-image: linear-gradient(to right bottom, #fff, #FFE100);
+  background-image: linear-gradient(to right bottom, #fff, #ffe100);
 }
-
-/* .card__side--back-2 {
-  background-image: linear-gradient(to right bottom, #ffb900, #6730ff);
-} */
-
-/* .card__side--back-3 {
-  background-image: linear-gradient(to right bottom, #7ed56f, #6730ff);
-} */
 
 .card:hover .card__side--front {
   transform: rotateY(-180deg);
@@ -255,24 +228,16 @@ body {
 .card__picture--1 {
   background-image: linear-gradient(to right bottom, #ffb900, #2b1f19),
     url(./slike/slika01.jpg);
-  /* background-image: linear-gradient(to right bottom,  #f7f7f7, #f7f7f7), url(./slike/slika01.jpg);  */
 }
 
-/* .card__picture--2 {
-  background-image: linear-gradient(to right bottom, #ffb900, #758b84),
-    url(./slike/slika04.jpg);
-
-} */
-
 .card__heading {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 300;
   text-transform: uppercase;
   text-align: right;
   color: #fff;
-  /* color: orange; */
   position: absolute;
-  top: 12rem;
+  top: 28rem;
   right: 2rem;
 }
 
@@ -335,7 +300,6 @@ body {
 
 .card__price-box p a {
   font-size: 2rem;
-  /* margin-top: 1rem; */
 }
 
 .card__price-only {
@@ -348,15 +312,10 @@ body {
   font-weight: 100;
 }
 
-p {
-  font-size: 2rem;
-}
-
 .izlaz {
   display: block;
   /* background-color: rgba(255, 255, 255, 0.8); */
   margin-top: 0.5rem;
-  /* background-size: 0.5rem; */
   padding: 0.2rem;
   text-align: center;
   border-radius: 1.2rem;
@@ -365,73 +324,41 @@ p {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 0.5rem;
 }
 
-h2 {
-  font-size: 2.5rem;
-}
-
-.text-mali {
-  font-size: 1rem;
-  border-radius: 1rem;
-  opacity: 0.5;
-}
-
-.text-mali:hover {
-  font-size: 1rem;
-  opacity: 1;
-  transform: scale(1.1);
-  transition: all 0.3s;
-}
-
 .text-srednji {
-  font-size: 2rem;
-  padding: 1rem;
+  font-size: 1.2rem;
+  padding: 0.7rem;
   /* margin-top: 1rem auto; */
   /* margin: 1rem auto !important; */
   color: #263238 !important;
   /* color: blue !important; */
 }
 
-.text-veliki {
-  font-size: 3rem;
-  text-align: center;
-}
-
-body {
-  /* background-image: url(img/pocetna.jpg); */
-  /* background-repeat: repeat; */
-  font-family: 'Cardo', cursive;
-  text-align: center;
-}
-
-.polja-smjer a:link {
-  text-decoration: none;
-  color:#a8a846;
-  opacity: 0.5;
-}
-
-.polja-smjer i {
-  color:#a8a846;
-}
-
 a:visited {
   text-decoration: none;
   color: #c2280c;
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
   opacity: 1;
+  background-color: #1b921b;
 }
 
-/* a:hover {
+a:link {
+  text-decoration: none;
+  color: #c2280c;
+  opacity: 0.5;
+}
+
+a:hover {
   color: green;
   text-decoration: none;
   opacity: 1;
-  transform: scale(1.3);
-  font-size: 2rem;
+  /* transform: scale(1.3); */
+  /* font-size: 2rem; */
   transition: all 0.3s;
-} */
+}
 
 a:active {
   text-decoration: none;
@@ -447,20 +374,29 @@ a:active {
   color: #1b921b;
 }
 
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
 #navbar ul {
+  width: 100%;
+  justify-content: space-between;
   padding: 1rem;
   list-style-type: none;
   text-align: center;
   /* background-color: #dbd0d0; */
   background-color: #f7f7f7;
-  margin: 1rem;
-  margin-right: 1rem;
+  margin: auto;
 }
 
 #navbar ul li {
   display: inline;
-  margin-right: 5rem;
-  font-size: 2rem;
+  /* padding: 0.3rem; */
+  /* margin-right: 5rem; */
+  font-size: 1.2rem;
+  margin: 0 1rem 1rem 1rem;
 }
 
 .spusti {
@@ -507,7 +443,6 @@ a:active {
   }
 
   .sli-baza {
-    /* top: -50%; */
     left: 50%;
     width: 350px;
     height: 540px;
@@ -515,8 +450,8 @@ a:active {
     /* color: transparent !important; */
     opacity: 0.1;
     pointer-events: none;
-    /* display: none; */
   }
+
   .sli-gore {
     display: none;
   }
