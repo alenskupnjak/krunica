@@ -13,7 +13,7 @@ body {
 
 .podjela {
   height: 90vh;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 .row {
@@ -26,11 +26,11 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* .row::after {
+.row::after {
   content: '';
   display: table;
   clear: both;
-} */
+}
 .row [class^='col-'] {
   float: left;
 }
@@ -69,26 +69,25 @@ body {
   width: calc((100% - 3rem) / 2);
 }
 
-
-
 .polja-smjer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
   align-items: center;
-  margin: auto;
+  font-size: 1rem;
+  font-size: 1.2rem;
+  /* margin: auto; */
   background-color: #f7f7f7;
   /* background-color: rgba(255, 255, 255, 0.8); */
   /* background-size: 1.5rem; */
   padding: 0.3rem;
-  text-align: center;
   border-radius: 0.2rem;
   box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.15);
-  transition: transform 0.5s;
+  /* transition: transform 0.5s; */
 }
 
 .polja-smjer img {
-  margin: 0 60px 0 60px;
+  margin: 0 70px 0 70px;
   width: 30px;
   height: 40px;
 }
@@ -126,12 +125,45 @@ body {
   text-align: center;
   /* border-radius: 0.2rem; */
   box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.15);
-  transition: transform 0.5s;
+  transition: transform 3s;
   font-size: 1.5rem;
+
+  /* https://www.w3schools.com/css/css3_animations.asp */
+  /* animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; */
+  animation: slideInFromLeft 1s ease-out 1 normal;
+  /* animation: slideInFromLeft 1s ease-out; */
+}
+
+.cijela-stranica {
+  font-size: 1.3rem;
+}
+
+.opis-molitve-cijela-stranica {
+  background-color: #f7f7f7;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: transform 3s;
+  font-size: 1.2rem;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .molitva {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-align: left;
   color: #1b921b;
 }
@@ -143,6 +175,15 @@ body {
   z-index: 1;
   width: 420px;
   height: 600px;
+
+  /* https://www.w3schools.com/css/css3_animations.asp */
+  /* animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; */
+
   /* background-color: transparent !important; */
 }
 
@@ -169,6 +210,11 @@ body {
   background-color: #f7f7f7;
 }
 
+h1 {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
 .dan h1 {
   color: #a8a846;
 }
@@ -177,16 +223,17 @@ body {
   color: #a8a846;
 }
 
+/* karta koja se okrece */
 .card {
-  perspective: 150rem;
   position: relative;
-  height: 56rem;
+  /* perspective: 150rem; */
+  /* height: 56rem; */
 }
 
 .card__side {
+  position: absolute;
   height: 600px;
   transition: all 1s;
-  position: absolute;
   top: 0;
   left: 0;
   width: 80%;
@@ -194,6 +241,7 @@ body {
   border-radius: 0.3rem;
   overflow: hidden;
   box-shadow: 0 1.5rem 4rem black;
+  animation: okrenistranicu 4s forwards ease-in;
 }
 
 .card__side--front {
@@ -210,10 +258,12 @@ body {
 
 .card:hover .card__side--front {
   transform: rotateY(-180deg);
+  transition: all 2s ease-in;
 }
 
 .card:hover .card__side--back {
   transform: rotateY(0);
+  transition: all 2s ease-in;
 }
 
 /* // prednja strana karte */
@@ -272,9 +322,13 @@ body {
 }
 
 .card__details ul li {
-  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.2rem;
   text-align: center;
   padding: 1rem;
+  color: #a8a846;
 }
 
 .card__details ul li:not(:last-child) {
@@ -295,37 +349,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  color: blueviolet;
-}
-
-.card__price-box p a {
-  font-size: 2rem;
-}
-
-.card__price-only {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-}
-
-.card__price-value {
-  font-size: 6rem;
-  font-weight: 100;
-}
-
-.izlaz {
-  display: block;
-  /* background-color: rgba(255, 255, 255, 0.8); */
-  margin-top: 0.5rem;
-  padding: 0.2rem;
-  text-align: center;
-  border-radius: 1.2rem;
-  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
-  transition: transform 1s;
-}
-
-h1 {
-  font-size: 1rem;
-  padding: 0.5rem;
+  /* color: blueviolet; */
 }
 
 .text-srednji {
@@ -444,12 +468,12 @@ a:active {
 
   .sli-baza {
     left: 50%;
-    width: 350px;
+    width: 360px;
     height: 540px;
     transform: translateX(-50%);
     /* color: transparent !important; */
-    opacity: 0.1;
-    pointer-events: none;
+    opacity: 0.2;
+    /* transition: opacity 2s ease-in; */
   }
 
   .sli-gore {
